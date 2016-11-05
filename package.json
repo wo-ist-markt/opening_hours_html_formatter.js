@@ -1,0 +1,32 @@
+{
+  "name": "opening_hours_html_formatter.js",
+  "version": "1.0.0",
+  "description": "A JavaScript library to HTML format opening hours.",
+  "author": "Tobias Preuss",
+  "keywords": [
+    "formatter",
+    "html",
+    "opening_hours.js",
+    "opening hours",
+    "openstreetmap",
+    "osm",
+    "table"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "moment": "~2.15.2",
+    "opening_hours": "~3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wo-ist-markt/opening_hours_html_formatter.js"
+  },
+  "bugs": {
+    "url": "https://github.com/wo-ist-markt/opening_hours_html_formatter.js/issues"
+  },
+  "scripts": {
+    "jasmine-tests": "jasmine",
+    "test": "npm run jasmine-tests"
+  }
+}
