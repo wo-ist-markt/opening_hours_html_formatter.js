@@ -1,0 +1,55 @@
+<!dOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <title>opening_hours_html_formatter demo</title>
+        <script src="lib/opening_hours/opening_hours.js"></script>
+        <script src="lib/moment/moment.min.js"></script>
+        <script src="../dist/opening_hours_html_formatter.js"></script>
+        <style type="text/css" media="screen">
+        <!--
+            body {
+                font-family: arial, serif;
+            }
+            table {
+                margin-top: 2em;
+                background: #f8f8f8;
+            }
+            th {
+                width: 10em;
+                text-align: left;
+                background: #55c4c4;
+            }
+            td {
+                width: 18em;
+                padding: 0.3em;
+                background: #c4c4c4;
+            }
+            tr.today th, tr.today td {
+                background: #c4c455;
+            }
+        -->
+        </style>
+    </head>
+    <body>
+        <h1>opening_hours_html_formatter demo</h1>
+        <script type="text/javascript" charset="utf-8">
+            var version = window.ohhf.version;
+            document.body.append("Successfully loaded version " + version + ".");
+
+            // Example
+
+            var example_opening_hours = "Mo-Tu, Th-Su 08:00-20:00; We 08:00-13:00, 15:00-18:00";
+            var now = new Date();
+            var DAY_NAMES_GERMAN = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+
+            var openingTimes = new window.ohhf.OpeningTimes(example_opening_hours);
+            var openingRanges = openingTimes.getOpeningRanges();
+            var weekGenerator = new window.ohhf.WeekGenerator();
+            var week = weekGenerator.getWeek(openingRanges);
+            var generator = new window.ohhf.WeekTableHtmlGenerator(week, now, DAY_NAMES_GERMAN);
+            document.body.append(generator.getWeek());
+        </script>
+    </body>
+</html>
