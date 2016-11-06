@@ -1,9 +1,5 @@
-var openingrangeformatter = require("../lib/src/openingrangeformatter");
-
-
 describe("An OpeningRangeFormatter", function() {
-
-  var formatter = new openingrangeformatter.OpeningRangeFormatter();
+  var formatter = new window.ohhf.OpeningRangeFormatter();
 
   it("should format the given date", function() {
     expect(formatter.getRangeDelimiter()).toEqual(" - ");
