@@ -6,7 +6,10 @@ describe("An OpeningRangeFormatter", function() {
   });
 
   it("should format the given date", function() {
-    var date = Date.UTC(2016, 11, 05, 23, 42, 0, 0);
+    var date = new Date(Date.UTC(2016, 11, 05, 23, 42, 0, 0));
+    var offset = new Date().getTimezoneOffset();
+    var minutes = date.getUTCMinutes() + offset;
+    date.setUTCMinutes(minutes);
     expect(formatter.formatDate(date)).toEqual("23:42");
   });
 
