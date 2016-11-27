@@ -1,8 +1,15 @@
 describe("An OpeningRangeFormatter", function() {
+
   var formatter = new window.ohhf.OpeningRangeFormatter();
 
-  it("should format the given date", function() {
+  it("should return a specific range delimiter", function() {
     expect(formatter.getRangeDelimiter()).toEqual(" - ");
+  });
+
+  it("should fail when the 'date' parameter is missing", function() {
+    expect(function() {
+      formatter.formatDate();
+    }).toThrowError("Parameter 'date' cannot be undefined.");
   });
 
   it("should format the given date", function() {
