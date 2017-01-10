@@ -2,7 +2,7 @@ describe("An OpeningRange", function() {
 
   var MockFormatter = function() {
 
-    this.formatDate = function(date) {
+    this.getFormattedDate = function(date) {
       return date.getUTCHours() + ":" + date.getUTCMinutes();
     };
 
@@ -25,7 +25,7 @@ describe("An OpeningRange", function() {
   });
 
   it("should return the formatted opening range", function() {
-    expect(openingRange.getFormattedRange()).toEqual("12:30 - 18:0");
+    expect(openingRange.getFormattedOpeningRange()).toEqual("12:30 - 18:0");
   });
 
 });

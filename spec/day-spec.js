@@ -6,7 +6,7 @@ describe("A Day", function() {
       return index;
     };
 
-    this.getFormattedRange = function() {
+    this.getFormattedOpeningRange = function() {
       return formattedRange;
     };
 
@@ -49,7 +49,7 @@ describe("A Day", function() {
   it("should return formatted opening ranges", function() {
     var day = new window.ohhf.Day();
     day.addOpeningRanges([range1, range2]);
-    expect(day.getFormattedRanges()).toEqual("07:30 - 14:00, 16:30 - 18:30");
+    expect(day.getFormattedOpeningRanges()).toEqual("07:30 - 14:00, 16:30 - 18:30");
   });
 
 });

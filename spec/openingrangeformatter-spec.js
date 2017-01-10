@@ -8,7 +8,7 @@ describe("An OpeningRangeFormatter", function() {
 
   it("should fail when the 'date' parameter is missing", function() {
     expect(function() {
-      formatter.formatDate();
+      formatter.getFormattedDate();
     }).toThrowError("Parameter 'date' cannot be undefined.");
   });
 
@@ -17,7 +17,7 @@ describe("An OpeningRangeFormatter", function() {
     var offset = new Date().getTimezoneOffset();
     var minutes = date.getUTCMinutes() + offset;
     date.setUTCMinutes(minutes);
-    expect(formatter.formatDate(date)).toEqual("23:42");
+    expect(formatter.getFormattedDate(date)).toEqual("23:42");
   });
 
 });

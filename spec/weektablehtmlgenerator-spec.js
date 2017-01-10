@@ -26,7 +26,7 @@ describe("A WeekTableHtmlGenerator", function() {
           this.getDayNameIndex = function() {
             return 1;
           };
-          this.getFormattedRanges = function() {
+          this.getFormattedOpeningRanges = function() {
             return "07:30 - 14:00";
           };
         };
@@ -47,7 +47,7 @@ describe("A WeekTableHtmlGenerator", function() {
           this.getDayNameIndex = function() {
             return 1;
           };
-          this.getFormattedRanges = function() {
+          this.getFormattedOpeningRanges = function() {
             return "07:30 - 14:00";
           };
         };
@@ -55,7 +55,7 @@ describe("A WeekTableHtmlGenerator", function() {
           this.getDayNameIndex = function() {
             return 0;
           };
-          this.getFormattedRanges = function() {
+          this.getFormattedOpeningRanges = function() {
             return "10:00 - 12:30, 13:30 - 18:30";
           };
         };
@@ -80,7 +80,7 @@ describe("A WeekTableHtmlGenerator", function() {
           this.getDayNameIndex = function() {
             return 6;
           };
-          this.getFormattedRanges = function() {
+          this.getFormattedOpeningRanges = function() {
             return "06:00 - 12:00";
           };
         };
