@@ -13,12 +13,16 @@ describe("An OpeningTimes", function() {
     expect(tillDate.getMinutes()).toEqual(30);
   });
 
-  xit("should return the next opening date", function() {
-    // TODO Pending test implementation
-    // https://github.com/wo-ist-markt/wo-ist-markt.github.io/pull/60
-    // https://github.com/wo-ist-markt/wo-ist-markt.github.io/pull/56/files#diff-6c1e2ffb1e9fa111df29c4d9ff48e5c2R43
-    var openingTimes = new window.ohhf.OpeningTimes("Dec 23-26 Tu-Fr 09:00-17:00 2044");
-    expect(openingTimes.getNextOpeningDate()).toEqual("XXX");
+  it("should return the next opening date", function() {
+    var openingTimes = new window.ohhf.OpeningTimes("2017-2044 Aug 22-25 Tu-Fr 09:00-17:00");
+
+    var nextOpeningDate = openingTimes.getNextOpeningDate();
+    expect(nextOpeningDate).toBeDefined();
+    expect(nextOpeningDate.getHours()).toEqual(9); // 09
+    expect(nextOpeningDate.getMinutes()).toEqual(0); // 00
+    expect(nextOpeningDate.getMonth()).toEqual(7); // August
+    expect(nextOpeningDate.getDate()).toEqual(22);
+    // Year and week day name change each year
   });
 
 });
