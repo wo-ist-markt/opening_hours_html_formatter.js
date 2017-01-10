@@ -25,4 +25,9 @@ describe("An OpeningTimes", function() {
     // Year and week day name change each year
   });
 
+  it("should return undefined for opening dates in the past", function() {
+    var openingTimes = new window.ohhf.OpeningTimes("2010 Aug 22-25 Tu-Fr 09:00-17:00");
+    expect(openingTimes.getNextOpeningDate()).toBeUndefined();
+  });
+
 });
