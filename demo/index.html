@@ -47,7 +47,8 @@
             var openingTimes = new window.ohhf.OpeningTimes(example_opening_hours);
             var openingRanges = openingTimes.getOpeningRanges();
             var weekGenerator = new window.ohhf.WeekGenerator();
-            var week = weekGenerator.getWeek(openingRanges);
+            var openingRangeFormatter = new window.ohhf.OpeningRangeFormatter();
+            var week = weekGenerator.getWeek(openingRanges, openingRangeFormatter);
             var generator = new window.ohhf.WeekTableHtmlGenerator(week, now, DAY_NAMES_GERMAN);
             document.body.append(generator.getWeek());
         </script>
