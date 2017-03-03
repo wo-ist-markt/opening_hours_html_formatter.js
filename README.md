@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/wo-ist-markt/opening_hours_html_formatter.js.svg?branch=master)](https://travis-ci.org/wo-ist-markt/opening_hours_html_formatter.js)
+
 # opening_hours_html_formatter.js
 
 This library can be used to HTML format opening hours.
