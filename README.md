@@ -10,6 +10,8 @@ The opening hours must conform to the [OpenStreetMap opening hours format specif
 
 Please take a look at the [demo](demo/index.html) to understand how to integrate the library.
 
+![Demo screenshot][demo-screenshot]
+
 A typical processing chain looks something like this:
 
 ```
@@ -73,7 +75,7 @@ The following libraries are used by this library and must be provided in the app
 This library is freely distributable under the terms of the [MIT license](LICENSE).
 
 
-
+[demo-screenshot]: gfx/demo-screenshot.png
 [moment-js]: http://momentjs.com
 [opening-hours-js]: https://github.com/opening-hours/opening_hours.js/tree/master
 [osm-openinghours]: https://wiki.openstreetmap.org/wiki/Key:opening_hours/specification
