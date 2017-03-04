@@ -66,7 +66,8 @@ Afterwards, the generated one-file-library can be found in the [dist](dist/) fol
 
 All source files can be found in the `lib/src/` folder.
 
-Tests can be executed in two different ways - headless and in the Chrome browser.
+Tests can be found in the `spec/` folder and can be executed in two different
+ways - headless and in the Chrome browser.
 
 ``` bash
 $ npm run test
