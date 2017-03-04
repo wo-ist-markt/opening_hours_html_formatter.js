@@ -62,6 +62,23 @@ $ deploy/deploy.sh
 Afterwards, the generated one-file-library can be found in the [dist](dist/) folder.
 
 
+## Development
+
+All source files can be found in the `lib/src/` folder.
+
+Tests can be executed in two different ways - headless and in the Chrome browser.
+
+``` bash
+$ npm run test
+```
+
+The first one runs in the shell. The second opens the Chrome browser and shows the test results.
+
+``` bash
+$ npm run test-chrome
+```
+
+
 ## Dependencies
 
 The following libraries are used by this library and must be provided in the application project.
