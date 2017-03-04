@@ -15,10 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'demo/lib/moment/moment.min.js',
-      'demo/lib/opening_hours/opening_hours.js',
-      'lib/src/*.js',
-      'spec/**/*[sS]pec.js'
+      'lib/**/*.js',
+      'spec/**/*[sS]pec.js',
     ],
 
 
