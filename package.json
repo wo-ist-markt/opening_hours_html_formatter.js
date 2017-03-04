@@ -31,5 +31,6 @@
   },
   "scripts": {
     "test": "karma start karma-headless.conf.js",
+    "test-chrome": "karma start karma-chrome.conf.js --log-level debug --reporters=kjhtml --browsers=Chromium --auto-watch"
   }
 }
