@@ -30,6 +30,6 @@
     "url": "https://github.com/wo-ist-markt/opening_hours_html_formatter.js/issues"
   },
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
   }
 }
